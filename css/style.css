@@ -1,0 +1,382 @@
+/* DEBUT POLICES */
+
+@font-face {
+    font-family: AdvertRough;
+    src: url(AdvertRough.otf) format("opentype");
+}
+
+@font-face {
+    font-family: Clarendon;
+    src: url(Clarendon.otf) format("opentype");
+}
+
+/* FIN POLICES */
+
+body {
+    background-color: #FFF9E8;
+}
+
+.row {
+    margin-top: 3rem;
+}
+
+.unrow {
+    margin-top: 0rem;
+}
+
+
+/* DEBUT NAVBAR */
+
+.navbar {
+    height: 40px;
+    background-color: black;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    z-index: 800;
+    transition: 0.5s;
+}
+
+.navbar-collapse {
+    background-color: black;
+    transition: 0.5s;
+}
+
+.navdrop {
+    height: 180px;
+    background-color: black;
+    position: fixed;
+    top: -400px;
+    z-index: 500;
+    width: 100%;
+    transition: 0.7s;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-toggler {
+    border: none;
+    padding: 0;
+}
+
+.fa-bars {
+    color: white;
+    margin-top: 15%;
+}
+
+.iconnav {
+    color: white;
+}
+
+.mobilenav {
+    color: white;
+    font-family: AdvertRough;
+    font-size: 13px
+}
+
+.listnav {
+    list-style: none;
+    display: block;
+    padding-bottom: 20px;
+}
+
+.textnav {
+    color: white;
+    font-family: AdvertRough;
+    text-transform: uppercase;
+    font-size: 11px;
+}
+
+.textnav:hover {
+    color: #BCBEC0;
+    text-decoration: none;
+}
+
+.navlisearch {
+    margin: 0;
+    outline: 0;
+    width: 98px;
+    border: 0;
+    padding: 0 2px;
+    font-family: 'AdvertRough';
+    font-size: 10px;
+    line-height: 15px;
+    height: 15px;
+}
+
+
+.dropdown-menu {
+    background-color: black;
+    border-radius: 0 0 10px 10px;
+    min-width: 5em;
+    right: 15px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btnCustom:hover+.dropdown-menu {
+    display: block;
+}
+
+.dropdown-item,
+.dropdown-item:hover,
+.dropdown-item:active {
+    background-color: black;
+}
+
+.dropdown-item:focus {
+    color: white;
+    background-color: black;
+}
+
+.dropdown-item-padding,
+.dropdown-item-padding:hover,
+.dropdown-item-padding:active,
+.dropdown-item-padding:focus {
+    padding: .25rem .75rem;
+}
+
+.btnCustom,
+.btnCustom:active,
+.btnCustom:focus {
+    background-color: transparent;
+    outline: none;
+    box-shadow: none;
+}
+
+.bread {
+    z-index: 10;
+    margin-top: 173px;
+    position: absolute;
+    margin-left: 45%;
+}
+
+.voiture {
+    position: relative;
+}
+
+
+/* FIN NAVBAR */
+
+/* DEBUT LOGOS */
+
+.logopain {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    transition: 0.5s;
+}
+
+.logopain2 {
+    position: relative;
+    top: 15px;
+    left: 50%;
+    margin-bottom: 60px;
+    transform: translate(-50%, 50%);
+}
+
+/* FIN LOGOS */
+
+/* DEBUT CARDS */
+
+.card {
+    border: none;
+}
+
+.card-link {
+    color: black;
+    font-family: AdvertRough;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.card-link:hover {
+    color: grey;
+}
+
+.map {
+    float: left;
+    width: 50px;
+    height: 50px;
+}
+
+.embed-responsive-item{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.embed-responsive-item iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+.mapText {
+    margin-top: 5%;
+}
+
+p {
+    font-family: Clarendon;
+    font-size: 14px;
+}
+
+.hauteur-ligne {
+    line-height: 1em;
+}
+
+.sous-ligne {
+    text-decoration: underline;
+}
+
+a,
+a:hover {
+    color: black;
+}
+
+.card-inverse {
+    background-color: #FFF9E8;
+}
+
+.card-title {
+    font-family: Clarendon;
+    font-size: 28px;
+    margin-top: 35%;
+}
+
+#latte {
+    padding: 0.75rem;
+}
+
+.assiette {
+    height: 74%;
+}
+
+/* FIN CARDS */
+
+
+
+/* TROUVEZ UN PLQ */
+
+.trouvezunlpq {
+    position: relative;
+}
+
+#trouvezunlpq-button {
+    background-color: transparent;
+    border: none;
+    font-size: 14px;
+    color: black;
+}
+
+#trouvezunlpq-input-show {
+    width:20em;
+    display: none;
+    background-color: transparent;
+    border: none;
+    font-size: 14px;
+    margin-left: 25%;
+}
+
+#trouvezunlpq-input {
+}
+
+/* FIN TROUVEZ UN LPQ */
+
+
+/*FOOTER*/
+
+ul {
+    list-style: none;
+}
+
+.foot {
+    font-family: AdvertRough;
+    font-size: 14px;
+    color: grey;
+    opacity: 0.5;
+    margin-top: 30px;
+}
+
+.linkfoot {
+    opacity: 0.5;
+    color: grey
+}
+
+.linkfoot:hover {
+    text-decoration: none;
+}
+
+footer {
+    box-shadow: 0px 0px 5px 5px rgba(211, 211, 211, 0.514);
+}
+
+i {
+    margin-right: 5px;
+}
+
+.fab {
+    font-size: 25px;
+    color: black;
+}
+
+/* FIN FOOTER */
+
+
+
+/* DEBUT MEDIA QUERIES */
+
+@media(max-width:600px) {
+    .logopain {
+        display: none;
+    }
+
+    .logopain2 {
+        display: none;
+    }
+
+    .textnav {
+        font-size: 20px;
+    }
+
+}
+
+@media(max-width:991px) {
+
+    .card-resize {
+        width: 220px;
+        height: 300px;
+        margin-bottom: 10px;
+        margin-top: 15px;
+    }
+
+    .card-resize2 {
+        width: 400px;
+        height: 300px;
+        margin-top: 20px;
+    }
+
+    .card-title {
+    font-size: 15px;
+    }
+
+    .foot {
+        text-align: center;
+    }
+}
+
+@media (min-width:1025px) {
+
+    .navspace {
+        margin-left: 45px;
+    }
+    
+    .navmarg {
+        margin-left: 15px;
+    }
+    
+    .navrightContent {
+        margin-right: 45px;
+    }
+}
+
+/* FIN MEDIA QUERIES */
