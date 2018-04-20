@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyATMse25kiWELwUDeetlDqkQnGFDa_f76k"></script>
+
+    <!-- Custom scripts -->
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <header>
+
+        <!-- Début navbar -->
+        <nav class="navbar navbar-expand-lg fixed-top animNav">
+            <div class="navbar-nav ml-auto">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="mobilenav">HOME</span>
+                    <span class="navbar-toggler-icon burger">
+                        <i class="fas fa-bars"></i>
+                    </span>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse animNav" id="navbarSupportedContent">
+                <ul class="navbar-nav navTitle">
+                    <li class="nav-item navspace">
+                        <a class="nav-link textnav" href="#">Manger simplement</a>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav navTitle">
+                    <li class="nav-item navmarg">
+                        <a class="nav-link textnav" href="#">Adresses & Menus</a>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav navTitle">
+                    <li class="nav-item navmarg">
+                        <a class="nav-link textnav" href="#">Notre histoire</a>
+                    </li>
+                </ul>
+                <div class="ml-md-auto navrightContent">
+                    <a class="textnav" href="#">Evènement & traiteur</a>
+                    <i class="fas fa-search textnav"></i>
+                    <div class="btn-group">
+                        <button type="button" class="btn btnCustom textnav" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-share-square textnav"></i>
+                        </button>
+                        <div class="dropdown-menu">
+                            <button class="dropdown-item dropdown-item-padding textnav" type="button">
+                                <i class="fab fa-twitter fa-2x iconnav"></i>
+                                <i class="fab fa-2x fa-facebook-f iconnav"></i>
+                                <i class="fab fa-2x fa-pinterest-p iconnav"></i>
+                            </button>
+
+                        </div>
+                    </div>
+                    <div class="btn-group">
+                        <button type="button" class="btn btnCustom textnav" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Français
+                        </button>
+                        <div class="dropdown-menu ">
+                            <button class="dropdown-item dropdown-item-padding textnav" type="button">English</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container-fluid"></div>
+        <div class="navdrop">
+            <div class="listnav">
+                <div class="row">
+                    <div class="navspace">
+                        <ul>
+                            <li>
+                                <a class="textnav" href="#">Notre pain</a>
+                            </li>
+                            <li>
+                                <a class="textnav" href="#">Nos ingrédients</a>
+                            </li>
+                            <li>
+                                <a class="textnav" href="#">Journal de cuisine</a>
+                            </li>
+                            <li>
+                                <a class="textnav" href="#">Recettes</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="">
+                        <ul>
+                            <li>
+                                <a class="textnav" href="#">Trouver un LPQ</a>
+                            </li>
+                            <li>
+                                <input type="text" class="navlisearch" placeholder="Trouvez un LPQ  🔍"></input>
+                            </li>
+                            <li>
+                                <a class="textnav" href="#">Menu</a>
+                            </li>
+                            <li>
+                                <a class="textnav" href="#">Traiteur</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="">
+                        <ul>
+                            <li>
+                                <a class="textnav" href="#">Notre philosophie</a>
+                            </li>
+                            <li>
+                                <a class="textnav" href="#">Les débuts</a>
+                            </li>
+                            <li>
+                                <a class="textnav" href="#">Journal quotidien</a>
+                            </li>
+                            <li>
+                                <a class="textnav" href="#">Notre entreprise</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+
+        <!-- Fin navbar -->
+
+        <!-- Carousel -->
+        <div id="carousel" class="carousel slide carousel-fade voiture" data-ride="carousel" data-interval="5000" data-pause="false">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="http://www.lepainquotidien.fr/wp-content/uploads/sites/3/2013/10/Nouveauslider_bourse-1.jpg"
+                        alt="Bourse">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="http://www.lepainquotidien.fr/wp-content/uploads/sites/3/2013/10/Nouveauslider_traiteur.jpg"
+                        alt="Traiteur">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="http://www.lepainquotidien.fr/wp-content/uploads/sites/3/2013/10/nouveaumenuhiverfinal.jpg"
+                        alt="Menu">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="http://www.lepainquotidien.fr/wp-content/uploads/sites/3/2013/10/Nouveauslider_fournil-2.jpg"
+                        alt="Pain">
+                </div>
+            </div>
+            <img src="http://www.lepainquotidien.fr/wp-content/themes/LPQ/img/bread.png" class="dark logopain">
+        </div>
+        <!-- Fin carousel -->
+
+    </header>
+
+
+    <div class="container" id="topcontainer">
+
+        <img class="logopain2" src="http://www.lepainquotidien.fr/wp-content/themes/LPQ/img/logo.png">
+
+        <!-- ROW 1 -->
+        <div class="row">
+            <div class="col-lg-6 mx-auto order-lg-2 ">
+                <div class="card">
+                    <!-- Carte google -->
+                    <div class="row unrow align-content-center">
+                        <div class="col-md-6 embed-responsive-item">
+                            <iframe width="600" height="450" src="https://www.google.com/maps/embed/v1/search?q=28%20Route%20du%20Pont%2C%20Noyalo%2C%20France&key=AIzaSyBKZazSCdZOHbSwzjuI9sXtHZjfUX2fllw"
+                                frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
+                        <!-- Fin carte -->
+                        <div class="col-md-6">
+                            <div class="card-body hauteur-ligne">
+                                <p>A
+                                    <a href="#" class="sous-ligne">Les Halles</a>
+                                </p>
+                                <p>
+                                    <i class="fas fa-phone"></i>
+                                    <span class="sous-ligne">+33 1 42 61 54 63</span>
+                                </p>
+                                <p>Du lundi au dimanche : 8h00 - 20h00</p>
+                                <p>B
+                                    <a href="#" class="sous-ligne">Marais</a>
+                                </p>
+                                <p>
+                                    <i class="fas fa-phone"></i>
+                                    <span class="sous-ligne">+33(0)1 44 54 03 07</span>
+                                </p>
+                                <p>Du lundi au dimanche : 8h00 - 21h00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center mapText trouvezunlpq">
+                    <button id="trouvezunlpq-button" class="textnav"> Trouvez un LPQ
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <input id="trouvezunlpq-input-show" class="textnav" type="text" placeholder="Entrez une adresse ou une ville  🔍">
+                    </input>
+                </div>
+            </div>
+
+            <div class="col-lg-6 mx-auto text-center card-resize2">
+                <a href="#" class="card-link">
+                    <img class="card-img-top assiette" src="http://www.lepainquotidien.fr/wp-content/uploads/sites/3/2013/09/Le-Pain-Quotidien_Printemps2017_Melanie-Denizot-06.jpg"
+                        alt="assiette">
+                </a>
+                <div class="card-body">
+                    <a href="#" class="card-link"> Découvrez nos ingrédients
+                        <br>
+                        <i class="far fa-hand-point-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Fin ROW 1 -->
+
+        <!-- ROW 2 -->
+        <div class="row align-items-center">
+            <div class="col-md-3 text-center card-resize mx-auto ">
+                <a href="#" class="card-link">
+                    <img class="card-img-top" src="http://www.lepainquotidien.fr/wp-content/uploads/sites/3/2017/09/latte-lead.jpg" alt="Latte">
+                </a>
+                <div class="card-body" id="latte">
+                    <a href="#" class="card-link">Découvrez notre nouveau latte réconfortant et épicé
+                        <br>
+                        <i class="fas fa-arrow-top-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-8 col-md-6 text-center card-resize mx-auto">
+                <a href="#" class="card-link">
+                    <img class="card-img-top" src="http://www.lepainquotidien.fr/wp-content/uploads/sites/3/2018/03/Main-Image-1.jpg" alt="Food">
+                </a>
+                <div class="card-body">
+                    <a href="#" class="card-link">Découvrez notre carte de printemps!
+                        <br>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="card card-inverse col-md-3 mx-auto text-center card-resize">
+                <a href="#">
+                    <img class="card-img" src="http://www.lepainquotidien.fr/wp-content/themes/LPQ/img/elipse-stroke.png" alt="Card image">
+                </a>
+                <div class="card-img-overlay">
+                    <h4 class="card-title">Recrutement</h4>
+                </div>
+                <div class="card-body">
+                    <a href="#" class="card-link">Rejoignez-nous !
+                        <br>
+                        <i class="fas fa-long-arrow-alt-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Fin ROW 2 -->
+
+        <!-- ROW 3 -->
+        <div class="row">
+            <div class="col-md-8 mx-auto text-center card-resize2">
+                <a href="#" class="card-link">
+                    <img class="card-img-top" src="http://www.lepainquotidien.fr/wp-content/uploads/sites/3/2013/09/Triple-Lead-Bread2.jpg" alt="Bread">
+                </a>
+                <div class="card-body">
+                    <a href="#" class="card-link"> Découvrez notre pain
+                        <br>
+                        <i class="far fa-hand-point-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Fin ROW 3 -->
+
+    </div>
+
+
+    <footer>
+        <div class="container-fluid">
+
+            <div class="row">
+
+                <div class="col-md-3 mx-auto">
+                    <ul class=" foot">
+                        <li>© 2018 LE PAIN QUOTIDIEN</li>
+                    </ul>
+                </div>
+                <ul class="foot col-md-3">
+                    <a class="linkfoot" href="https://visitor.r20.constantcontact.com/manage/optin/ea?v=001o9BVU3HO12xRWjDe_9FHvg&">
+                        <li>INSCRIVEZ-VOUS A NOTRE NEWSLETTER</li>
+                    </a>
+                    <br/>
+                    <li>
+                        <a href="https://www.instagram.com/lepainquotidienfr/">
+                            <i class="fab fa-instagram logo"></i>
+                        </a>
+                        <a href="https://twitter.com/lpqfr">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.facebook.com/LePainQuotidien">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="foot col-sm-2 col-md-2 mx-auto">
+                    <a class="linkfoot" href="#">
+                        <li>TROUVEZ UN LPQ</li>
+                    </a>
+                    <a class="linkfoot" href="#">
+                        <li>FAQ</li>
+                    </a>
+                    <a class="linkfoot" href="#">
+                        <li>MENU</li>
+                    </a>
+                </ul>
+                <ul class="foot col-sm-2 col-md-1 mx-auto">
+                    <a class="linkfoot" href="#">
+                        <li>PRESSE</li>
+                    </a>
+                    <a class="linkfoot" href="#">
+                        <li>CONTACT</li>
+                    </a>
+                </ul>
+                <ul class="foot col-sm-2 col-md-3 offset-1 mx-auto">
+                    <a class="linkfoot" href="#">
+                        <li>INTERNATIONAL</li>
+                    </a>
+                    <a class="linkfoot" href="#">
+                        <li>CONDITIONS D'UTILISATION</li>
+                    </a>
+                </ul>
+
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+</body>
+
+</html>
